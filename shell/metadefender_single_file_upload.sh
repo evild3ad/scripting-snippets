@@ -23,7 +23,7 @@ LOG="/tmp/scan_request.txt"
 
 # Initiate scan request by uploading a file
 echo "[Info]  Initiate scan request ..."
-curl -X POST -H "apikey: ${APIKEY}" -H "filename: $(basename ${FILE})" -T "$FILE" https://scan.metadefender.com/v2/file 2> /dev/null | python -m json.tool | tee ${LOG}
+curl -X POST -H "apikey: ${APIKEY}" -H "filename: $(basename ${FILE})" -T ${FILE} https://scan.metadefender.com/v2/file 2> /dev/null | python -m json.tool | tee ${LOG}
 
 # Retrieve scan report using data_id
 echo "[Info]  Retrieve scan report ..."
