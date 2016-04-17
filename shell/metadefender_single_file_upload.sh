@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# @author:    evild3ad
-# @url:		  https://evild3ad.com/
-# @date:	  2016-04-17
+# @author:	evild3ad
+# @url:		https://evild3ad.com/
+# @date:	2016-04-17
 #
 #              _ _     _ _____           _ 
 #    _____   _(_) | __| |___ /  __ _  __| |
