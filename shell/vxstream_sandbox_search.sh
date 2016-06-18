@@ -26,7 +26,7 @@ APIKEY="your api key"
 SECRET="your secret"
 
 # Search the database using regular and advanced search queries
-curl -X GET -A "VxStream" -u ${APIKEY}:${SECRET} -L http://www.hybrid-analysis.com/api/search?query=${QUERY}
+curl -X GET -A "VxStream" -u ${APIKEY}:${SECRET} -L https://www.hybrid-analysis.com/api/search?query=${QUERY}
 
 # Advanced Search Options:
 # host:95.181.53.78
