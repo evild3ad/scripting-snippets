@@ -19,13 +19,13 @@
 # Usage:
 # ./geoipupdate.sh
 #
-# Database 					Binary / gzip
-# GeoLite Country			http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
-# GeoLite Country IPv6		http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz
-# GeoLite City				http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
+# Database 									Binary / gzip
+# GeoLite Country						http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+# GeoLite Country IPv6			http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz
+# GeoLite City							http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
 # GeoLite City IPv6 (Beta)	http://geolite.maxmind.com/download/geoip/database/GeoLiteCityv6-beta/GeoLiteCityv6.dat.gz
-# GeoLite ASN				http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
-# GeoLite ASN IPv6 			http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNumv6.dat.gz
+# GeoLite ASN								http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz
+# GeoLite ASN IPv6 					http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNumv6.dat.gz
 #
 #
 # Tested on Ubuntu 16.04 LTS and Mac OS X 10.11.6
@@ -58,7 +58,7 @@ if ! [ $? -eq 0 ]; then
 	echo "[Error]  Please check your internet connection!" && exit 1
 fi
 
-# Remove all files except 'geoipupdate.sh' 
+# Remove all files except 'geoipupdate.sh'
 find . ! -name 'geoipupdate.sh' -type f -exec rm -f {} +
 
 # Downloading GeoIP Legacy binary databases
