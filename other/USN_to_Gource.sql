@@ -3,6 +3,7 @@
 
 Updated by mwilling@evild3ad.com (ANJP-v3.13.0 201509141000, Gource v0.42)
 
+https://www.obsidianforensics.com/blog/visualizing-usn-journal-activity
 https://www.gettriforce.com/product/anjp-free/
 https://www.gettriforce.com/product/triforce-anjp/
 http://gource.io/
@@ -18,5 +19,5 @@ SELECT CAST(round((JULIANDAY(ur_datetime)-2440587.5)*86400,0) as integer),
     ELSE 'M'                          -- and 'M' for modifying 
   END,
 REPLACE(ur_fullname, '\', '/') -- swap the backslashes for forward slashes 
-FROM usn_events_report          -- this is a view in the Triforce ANJP DB
-ORDER BY ur_datetime ASC;       -- order by timestamp
+FROM usn_events_report         -- this is a view in the Triforce ANJP DB
+ORDER BY ur_datetime ASC;      -- order by timestamp
